@@ -75,7 +75,7 @@ const Bmi = () => {
         <div className="container mt-5">
           
             <div className="row d-flex  justify-content-center align-content-center">
-                <div className="col-lg-7 ">
+                <div className="col-lg-8 col-md-11">
                     <h1 className="text-center bg-success">BMI Calculator</h1>
                     <div className="bg-dark p-5 rounded">
                     <div className="d-flex justify-content-evenly ">
@@ -123,7 +123,7 @@ const Bmi = () => {
                     <div class="row g-0">
                         <div class="col-md-4">
                            <img src={ result>24?"../img/man2.jpg":result>18.4?"../img/man3.jpg":"../img/man4.jpg"}
-                             class="img-fluid w-100  h-auto rounded-start" alt="..."/>
+                             class="img-fluid w-100  h-100 rounded-start" alt="..."/>
                         </div>
                         <div class="col-md-8">
                         <div className="card-header text-center">
@@ -133,7 +133,7 @@ const Bmi = () => {
                                 </strong>
                         </div>
                         <div class="card-body">
-                            <div className="card-body">
+                            <div className="card-body  mb-md-1 ">
                                                 <h1 className="card-title text-center">{result}</h1>
                                                 <hr className="hr" />
                                                 <h5 className='text-center mb-3'>Information</h5>
@@ -158,7 +158,7 @@ const Bmi = () => {
                                                 
                         
                         </div>
-                        <div class="card-footer mt-3 text-muted">
+                        <div class=" card-header  text-muted">
                            Created BY Aynul
                         </div>  
                         </div>
