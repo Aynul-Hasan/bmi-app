@@ -26,6 +26,10 @@ const Bmi = () => {
         }else if(weightMethod==='1'&& heightMethod==='2'){
             const res= weight/ (height*height);
             setResult( res);
+            setHeight('')
+            setHeightMethod('')
+            setWeight('')
+            setWeightMethod('')
 
 
 
@@ -35,34 +39,62 @@ const Bmi = () => {
                 const meter=(height*0.01)
                 const res =kg/(meter*meter)
                 setResult(res);
+                setHeight('')
+                setHeightMethod('')
+                setWeight('')
+                setWeightMethod('')
             } else if(weightMethod==='2'&& heightMethod==='3'){
                 const kg=(weight*0.4536)
                 const feet=(height*0.3048)
                 const res =kg/(feet*feet)
                 setResult(res);
+                setHeight('')
+                setHeightMethod('')
+                setWeight('')
+                setWeightMethod('')
             }else if(weightMethod==='2'&& heightMethod==='4'){
                 const kg=weight*0.4536
                 const inch=height*0.0254
                 const res = kg/ (inch*inch)
                 setResult(res);
+                setHeight('')
+                setHeightMethod('')
+                setWeight('')
+                setWeightMethod('')
             }else if(weightMethod==='2'&& heightMethod==='2'){
                 const kg=weight*0.4536;
               
                 // const meter=height
                 const res =(kg)/(height*height)
                 setResult(res);
+                setHeight('')
+                setHeightMethod('')
+                setWeight('')
+                setWeightMethod('')
             }else if(weightMethod==='1'&& heightMethod==='1'){
                 const meter=(height*0.01)
                 const res =(weight)/(meter*meter)
                 setResult(res);
+                setHeight('')
+                setHeightMethod('')
+                setWeight('')
+                setWeightMethod('')
             }else if(weightMethod==='1'&& heightMethod==='3'){
                 const meter=(height*0.3048)
                 const res =(weight)/(meter*meter)
                 setResult(res);
+                setHeight('')
+                setHeightMethod('')
+                setWeight('')
+                setWeightMethod('')
             }else if(weightMethod==='1'&& heightMethod==='4'){
                 const meter=(height*0.0254)
                 const res =(weight)/(meter*meter)
                 setResult(res);
+                setHeight('')
+                setHeightMethod('')
+                setWeight('')
+                setWeightMethod('')
             }
          }
     }
