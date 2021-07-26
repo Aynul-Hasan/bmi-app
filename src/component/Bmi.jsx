@@ -26,75 +26,46 @@ const Bmi = () => {
         }else if(weightMethod==='1'&& heightMethod==='2'){
             const res= weight/ (height*height);
             setResult( res);
-            setHeight('')
-            setHeightMethod('')
-            setWeight('')
-            setWeightMethod('')
-
-
-
         }else{
             if(weightMethod==='2'&& heightMethod==='1'){
                 const kg=(weight*0.4536)
                 const meter=(height*0.01)
                 const res =kg/(meter*meter)
                 setResult(res);
-                setHeight('')
-                setHeightMethod('')
-                setWeight('')
-                setWeightMethod('')
+               
             } else if(weightMethod==='2'&& heightMethod==='3'){
                 const kg=(weight*0.4536)
                 const feet=(height*0.3048)
                 const res =kg/(feet*feet)
                 setResult(res);
-                setHeight('')
-                setHeightMethod('')
-                setWeight('')
-                setWeightMethod('')
+               
             }else if(weightMethod==='2'&& heightMethod==='4'){
                 const kg=weight*0.4536
                 const inch=height*0.0254
                 const res = kg/ (inch*inch)
                 setResult(res);
-                setHeight('')
-                setHeightMethod('')
-                setWeight('')
-                setWeightMethod('')
+               
             }else if(weightMethod==='2'&& heightMethod==='2'){
                 const kg=weight*0.4536;
               
                 // const meter=height
                 const res =(kg)/(height*height)
                 setResult(res);
-                setHeight('')
-                setHeightMethod('')
-                setWeight('')
-                setWeightMethod('')
+              
             }else if(weightMethod==='1'&& heightMethod==='1'){
                 const meter=(height*0.01)
                 const res =(weight)/(meter*meter)
                 setResult(res);
-                setHeight('')
-                setHeightMethod('')
-                setWeight('')
-                setWeightMethod('')
+               
             }else if(weightMethod==='1'&& heightMethod==='3'){
                 const meter=(height*0.3048)
                 const res =(weight)/(meter*meter)
                 setResult(res);
-                setHeight('')
-                setHeightMethod('')
-                setWeight('')
-                setWeightMethod('')
+              
             }else if(weightMethod==='1'&& heightMethod==='4'){
                 const meter=(height*0.0254)
                 const res =(weight)/(meter*meter)
                 setResult(res);
-                setHeight('')
-                setHeightMethod('')
-                setWeight('')
-                setWeightMethod('')
             }
          }
     }
@@ -152,7 +123,7 @@ const Bmi = () => {
                     <div class="row g-0">
                         <div class="col-md-4">
                            <img src={ result>24?"../img/man2.jpg":result>18.4?"../img/man3.jpg":"../img/man4.jpg"}
-                             class="img-fluid rounded-start" alt="..."/>
+                             class="img-fluid w-100  h-auto rounded-start" alt="..."/>
                         </div>
                         <div class="col-md-8">
                         <div className="card-header text-center">
@@ -176,15 +147,20 @@ const Bmi = () => {
                                                         <div className="bg-succ info-d"></div>
                                                         <div className="bg-dan  info-d"></div>
                                                 </div>
-                                                <div className="d-flex justify-content-lg-between mx-4 mt-1">
+                                                <div className="d-flex justify-content-between mt-1">
                                                     <small>16.0</small>
                                                     <small>18.5</small>
                                                     <small>25.0</small>
                                                     <small>40.0</small>
                                                 </div>
+
                                             </div>
+                                                
                         
                         </div>
+                        <div class="card-footer mt-5 text-muted">
+                           Created BY Aynul
+                        </div>  
                         </div>
                     </div>
                     </div>
