@@ -158,7 +158,7 @@ const Bmi = () => {
                                                 
                         
                         </div>
-                        <div class="card-footer mt-5 text-muted">
+                        <div class="card-footer mt-3 text-muted">
                            Created BY Aynul
                         </div>  
                         </div>
